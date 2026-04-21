@@ -4,34 +4,33 @@ const Restaurant = require("../models/Restaurant");
 
 const restaurants = [
     {
-        name: "Hotel Grand",
-        description: "Premium dining experience",
-        image: "https://b.zmtcdn.com/data/pictures/0/92020/0307c6fdb751054fb51f876bb913cc16_o2_featured_v2.jpg",
-        rating: 4.1,
-        cuisine: ["Biryani", "Hyderabadi", "Chinese"],
-        location: "Nellore",
-        avgPrice: 500,
-        isDelivery: true,
+        name: "Babylon Brewery & Club",
+        description: "Premium brewery and lounge",
+        image: "https://b.zmtcdn.com/data/pictures/3/22295613/aade5a7026490f1cdc60f7f5dc094f78_featured_v2.jpg?output-format=webp",
+        rating: 4.5,
+        reviewsCount: 3166,
+        cuisine: ["Continental", "Turkish", "Modern Indian"],
+        location: "Nanakramguda, Hyderabad",
+        avgPrice: 2500,
+        isDelivery: false,
         isDiningOut: true,
+        isNightLife: true,
         menu: [
-            { name: "Special Biryani", price: 250, category: "Biryani" },
-            { name: "Chicken 65", price: 180, category: "Staters" }
+            { name: "Beer Sampler", price: 600, category: "Drinks" }
         ]
     },
     {
-        name: "Burger King",
-        description: "Best burgers in town",
-        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/e531b669-397c-4a40-8f60-50868537c098_23734.JPG",
-        rating: 4.5,
-        cuisine: ["Burgers", "Fast Food"],
-        location: "Nellore",
-        avgPrice: 300,
+        name: "Ajmeer Maharaj Hotel",
+        description: "Authentic North Indian food",
+        image: "https://b.zmtcdn.com/data/pictures/6/22032946/e91a99e72302d7e0813b78e4f0978d3a_featured_v2.jpg",
+        rating: 4.0,
+        reviewsCount: 850,
+        cuisine: ["North Indian", "Biryani"],
+        location: "Guntur",
+        avgPrice: 400,
         isDelivery: true,
-        isDiningOut: false,
-        menu: [
-            { name: "Whopper", price: 150, category: "Burger" },
-            { name: "Fries", price: 80, category: "Sides" }
-        ]
+        isDiningOut: true,
+        menu: []
     }
 ];
 

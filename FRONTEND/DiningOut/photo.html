@@ -245,6 +245,30 @@
 
 </div>
 <script src="next.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const data = localStorage.getItem('selectedRestaurant');
+    if (data) {
+        const restaurant = JSON.parse(data);
+        
+        // Update Title and Info
+        document.querySelector('.left h1').innerText = restaurant.name;
+        document.querySelector('.cuisine').innerText = restaurant.cuisine;
+        document.querySelector('.address').innerText = restaurant.location || "Hyderabad";
+        document.querySelector('.rating').innerText = restaurant.rating;
+        document.querySelector('.price').innerText = restaurant.price;
+        
+        // Update Gallery
+        if (restaurant.image) {
+            document.querySelector('.big-img img').src = restaurant.image;
+        }
+
+        // Update Page Title
+        document.title = restaurant.name + " - Restaurant";
+        document.querySelector('.title').innerText = restaurant.name + " Photos";
+    }
+});
+</script>
 </body>
 
 <div class="footer">

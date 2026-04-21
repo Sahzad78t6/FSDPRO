@@ -48,6 +48,16 @@ document.querySelectorAll('.slider-window').forEach(window => {
 document.addEventListener('click', (e) => {
     const card = e.target.closest('.restaurant-card');
     if (card && card.dataset.link) {
+        // Capture details for dynamic page display
+        const restaurantData = {
+            name: card.querySelector('h3').innerText,
+            rating: card.querySelector('.rating').innerText,
+            cuisine: card.querySelector('.card-details span:first-child').innerText,
+            price: card.querySelector('.card-details span:last-child').innerText,
+            image: card.querySelector('img').src,
+            location: card.dataset.location || "Hyderabad"
+        };
+        localStorage.setItem('selectedRestaurant', JSON.stringify(restaurantData));
         window.location.href = card.dataset.link;
     }
 });
