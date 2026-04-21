@@ -4,594 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../responsive_base.css">
     <link rel="stylesheet" href="./style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-    <div class="pura">
-       
-        <div class="head">
-        <div class="first">
-            <div class="zomato Box btn ">
-               <img src="../Delivery/logo.png" tabindex="0" class="pic">
+    <header class="header-main">
+        <div class="container">
+            <div class="nav-top">
+                <a href="../index.html" class="logo-main">
+                    <img src="../Delivery/logo.png" alt="Zomato">
+                </a>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i>
+                    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+                <div class="auth-btns">
+                    <button onclick="openLogin()">Log in</button>
+                    <button class="signup-btn" onclick="openSignup()">Sign up</button>
+                </div>
             </div>
 
-            <div class="search Box btn ">
-                <form >
-                <input type="text" class="searching" placeholder="Search for restaurant, cuisine or a dish   ">
-                </form>
-            </div>
-
-            <div class="login Box btn">
-           <button class="button">Login</button>
-            </div>
-
-            <div class="signup Box btn">
-             <button class="button">Sign up</button>
-            </div>
-
+            <nav class="tabs-container">
+                <a href="../DiningOut/index.html" class="tab-item">
+                    <div class="tab-icon"><img src="../DiningOut/fork.avif" alt=""></div>
+                    <div class="tab-text"><h2>Dining Out</h2></div>
+                </a>
+                <a href="../Delivery/index.html" class="tab-item active">
+                    <div class="tab-icon" style="background: #E8F3F1;"><img src="../DiningOut/scooter.webp" alt=""></div>
+                    <div class="tab-text"><h2>Delivery</h2></div>
+                </a>
+                <a href="../NightLife/index.html" class="tab-item">
+                    <div class="tab-icon" style="background: #EDF4FF;"><img src="../DiningOut/Nightlife.webp" alt=""></div>
+                    <div class="tab-text"><h2>Nightlife</h2></div>
+                </a>
+            </nav>
         </div>
-         <div class="project">
-        <div class="second">
-
-            <div class="pehla Box">
-
-            <div class="plate Box">
-                <a href="../DiningOut/index.html"><img src="../DiningOut/fork.avif" alt="fork_icon" class="fork"></a>
-            </div>
-            <div class="dining Box">
-                 <a href="../DiningOut/index.html" class="rang">DiningOut</a>
-            </div>
-            </div>
-            
-               
-            <div class="dusra Box">
-
-            <div class="scooter Box">
-                <a href="../Delivery/index.html"><img src="../Delivery/scooter1webp.webp" alt="scooter_icon" class="gaddi"></a>
-            </div>
-            
-            <div class="Deli Box">
-               <a href="../Delivery/index.html" class="rang">Delivery</a>
-            </div>
-        </div>
-        
-
-
-        <div class="tisra Box">
-         <div class="nigh Box">
-                <a href="../NightLife/index.html"><img src="../DiningOut/Nightlife.webp" alt="night" class="nighticon"></a>
-            </div>
-            
-            <div class="Nightl Box">
-                <a href="../NightLife/index.html" class="rang">Nightlife</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
     </header>
 
- <div class="project">
-    <div class="biryani">
-       <h1> Biryani</h1>
-       <div class="para biryani">
-        <p>Taste these delectable classics, delectable biryani's to make your day.</p>
-       </div>
-       <div class="res biryani">
-        <h3>151 Restaurants to explore</h3>
-       </div>
-       </div>
-    </div>
-
-
-     <div class="project">
-    <div class="card">
-        <div class="pivc">
-            <img src="https://b.zmtcdn.com/data/pictures/0/92020/0307c6fdb751054fb51f876bb913cc16_o2_featured_v2.jpg" alt="biryani" class="img">
-           <div class="trend">
-             <div class="discount">60% OFF UPTO ₹120</div>
-           </div>
-        </div>
-        <div class="section">
-        <div class="name"><h2>Hotel Grand </h2></div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.1</h3>
-            </div>
-            <div class="time">
-                <h3> • 55-60 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Hyderabadi Kababs, Chinese</p>
-        </div>
-        <div class="place">
-            <p>Nellore</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="./deccan.avif" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ITEMS AT ₹79
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Deccan Elite  Cuisines</h2>
+    <main class="container">
+        <div class="cuisine-header">
+            <h1>Biryani</h1>
+            <p>Taste these delectable classics, delectable biryani's to make your day.</p>
+            <h3>151 Restaurants to explore</h3>
         </div>
 
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.1</h3>
+        <div class="restaurant-grid">
+            <!-- Card 1 -->
+            <div class="restaurant-card">
+                <div class="card-img-wrapper">
+                    <img src="https://b.zmtcdn.com/data/pictures/0/92020/0307c6fdb751054fb51f876bb913cc16_o2_featured_v2.jpg" alt="biryani">
+                    <div class="card-badge">60% OFF</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Hotel Grand</h3>
+                        <div class="rating">4.1★</div>
+                    </div>
+                    <div class="card-details">
+                        <span>Biryani, Hyderabadi Kababs</span>
+                        <span>55-60 mins</span>
+                    </div>
+                </div>
             </div>
-            <div class="time">
-                <h3> • 35-40 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Tandoor</p>
-        </div>
-        <div class="place">
-            <p>Mehdipatnam</p>
-        </div>
-     </div>
-    </div>
 
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/3/26/fcdfc743-5641-44c0-a39d-218df4738545_1535.JPG" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-            ₹125 OFF ABOVE ₹999
+            <!-- Card 2 -->
+            <div class="restaurant-card">
+                <div class="card-img-wrapper">
+                    <img src="./deccan.avif" alt="biryani">
+                    <div class="card-badge">ITEM AT ₹79</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Deccan Elite Cuisines</h3>
+                        <div class="rating">4.1★</div>
+                    </div>
+                    <div class="card-details">
+                        <span>Biryani, Tandoor</span>
+                        <span>35-40 mins</span>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Grand Cafe</h2>
-        </div>
 
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.4</h3>
-            </div>
-            <div class="time">
-                <h3> • 20-25 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Beverages</p>
-        </div>
-        <div class="place">
-            <p>Darulshifa</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2026/3/5/e11de8f0-5438-4d98-b0ae-3c03b020b9f4_9124b19d-3fd3-4c35-9ebf-c58827cf181c.JPG" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-              50% OFF UPTO ₹100
-            </div>
+            <!-- Card 3 -->
+            <div class="restaurant-card">
+                <div class="card-img-wrapper">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/3/26/fcdfc743-5641-44c0-a39d-218df4738545_1535.JPG" alt="biryani">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Grand Cafe</h3>
+                        <div class="rating">4.4★</div>
+                    </div>
+                    <div class="card-details">
+                        <span>Biryani, Beverages</span>
+                        <span>20-25 mins</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section">
-        <div class="name">
-            <h2>Sultan Serai</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.2</h3>
-            </div>
-            <div class="time">
-                <h3> • 35-40 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Hyderabadi Kababs, Chinese</p>
-        </div>
-        <div class="place">
-            <p>Banjara Hills</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2026/3/6/43583b81-82bb-4dbd-b8f9-8897a6af1e40_556baf62-9c95-4d85-a6f5-c7c6f85e5d8b.png" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ITEM AT ₹199
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Swayampakam</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >5</h3>
-            </div>
-            <div class="time">
-                <h3> • 50-60 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Andhra, Hyderabadi</p>
-        </div>
-        <div class="place">
-            <p>Banjara Hills</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="./sri.avif" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ₹150 OFF ABOVE ₹299
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Sri Varahi Bhavan</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.3</h3>
-            </div>
-            <div class="time">
-                <h3> • 35-40 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>South Indian, North Indian, Beverage.</p>
-        </div>
-        <div class="place">
-            <p>Santoshnagar & Saidabad</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="./b8.avif" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                 ₹120 OFF ABOVE ₹399
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Annapurna Kitchen</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >3.9</h3>
-            </div>
-            <div class="time">
-                <h3> • 50-60 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>South Indian</p>
-        </div>
-        <div class="place">
-            <p>Nallakunta & Vidyanagar</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2024/4/23/2549c862-7abb-4c69-8d00-4761b7c5c734_25c6ddcd-d758-4cec-8a16-17c3b92953f9.jpg_compressed" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                60% OFF UPTO ₹120
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Blue Fox</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.4</h3>
-            </div>
-            <div class="time">
-                <h3> • 45-50 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Chinese, Tandoor</p>
-        </div>
-        <div class="place">
-            <p>Himayath Nagar</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2026/3/26/c4ed649b-7200-4871-bf46-2612a6ab21b1_0d82d27b-ec09-4a1d-861b-a09ce60b5d0f.jpg" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                60% OFF UPTO ₹120
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Balaji Family Dhaba</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.4</h3>
-            </div>
-            <div class="time">
-                <h3> • 35-40 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Tandoor, Biryani, Chinese</p>
-        </div>
-        <div class="place">
-            <p>Malakpet</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="./megh.avif" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ITEM AT ₹99
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Behrouz Biryani</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >3.7</h3>
-            </div>
-            <div class="time">
-                <h3> • 40-45 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Kebabs, Biryani, Mughlai</p>
-        </div>
-        <div class="place">
-            <p>Abids</p>
-        </div>
-     </div>
-    </div>
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/8/1c74e91e-8173-4f1d-9563-09dad340da25_16394.ss.jpg" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ITEM AT ₹99
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Iqbal Cafe</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.5</h3>
-            </div>
-            <div class="time">
-                <h3> • 30-35 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani</p>
-        </div>
-        <div class="place">
-            <p>Charminar</p>
-        </div>
-     </div>
-    </div>
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/10/15f9bab1-ee85-48b4-8f23-a7e3a649f2f8_603117.JPG" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                60% OFF UPTO ₹120
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>UBQ-Meals,Thalis & Bowls</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.0</h3>
-            </div>
-            <div class="time">
-                <h3> • 40-45 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>North Indian, Biryani</p>
-        </div>
-        <div class="place">
-            <p>ABIDS</p>
-        </div>
-     </div>
-    </div>
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2025/6/2/77416b75-6ea8-4d05-87b6-52eb4682e2b9_1ee762ec-c451-410f-8896-ce35bcd89ccd.jpg" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                60% OFF UPTO ₹120
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Balaji Family Dhaba</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.4</h3>
-            </div>
-            <div class="time">
-                <h3> • 35-40 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Tandoor, Biryani, Chinese</p>
-        </div>
-        <div class="place">
-            <p>Malakpet</p>
-        </div>
-     </div>
-    </div>
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2024/9/21/b75e7757-1aa0-4e41-9c0e-706dbeccecc1_787f377a-1668-4e09-86cc-851fb8fdeda1.jpg" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                ITEMS AT ₹145
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>ZAZA Mughal Biryani</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >3.7</h3>
-            </div>
-            <div class="time">
-                <h3> • 20-25 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani, Awadhi</p>
-        </div>
-        <div class="place">
-            <p>Mehdipatnam</p>
-        </div>
-     </div>
-    </div>
-    <div class="card">
-        <div class="pivc">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1154cffac2453eb0bf7fdda7e5ea1659" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                60% OFF UPTO ₹120
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Balaji Family Dhaba</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.4</h3>
-            </div>
-            <div class="time">
-                <h3> • 35-45 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Tandoor, Biryani, Chinese</p>
-        </div>
-        <div class="place">
-            <p>ABIDS</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="card">
-        <div class="pivc">
-            <img src="https://b.zmtcdn.com/data/dish_photos/0f2/19517db2b256595be0d540985c08c0f2.png" alt="biryani" class="img">
-            <div class="trend">
-            <div class="discount">
-                30% OFF UPTO ₹75
-            </div>
-            </div>
-        </div>
-        <div class="section">
-        <div class="name">
-            <h2>Biryani Darbar</h2>
-        </div>
-
-        <div class="range">
-            <div class="rate">
-                <div class="star">★</div>
-                <h3 >4.1</h3>
-            </div>
-            <div class="time">
-                <h3> • 45-50 mins</h3>
-            </div>
-        </div>
-        <div class="cuisine">
-            <p>Biryani</p>
-        </div>
-        <div class="place">
-            <p>Ameerpet</p>
-        </div>
-     </div>
-    </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
     </div>
     
 </body>

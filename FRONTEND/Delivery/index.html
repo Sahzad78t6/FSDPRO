@@ -4,80 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../responsive_base.css">
     <link rel="stylesheet" href="./style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-         
-    <div class="pura">
-       
-      
-        <div class="head">
-        <div class="first">
-            <div class="zomato Box btn ">
-               <img src="./logo.png" tabindex="0" class="pic">
+    <header class="header-main">
+        <div class="container">
+            <div class="nav-top">
+                <a href="../index.html" class="logo-main">
+                    <img src="./logo.png" alt="Zomato">
+                </a>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i>
+                    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+                <div class="auth-btns">
+                    <button onclick="openLogin()">Log in</button>
+                    <button class="signup-btn" onclick="openSignup()">Sign up</button>
+                </div>
             </div>
 
-            <div class="search Box btn ">
-                <form >
-                <input type="text" class="searching" placeholder="Search for restaurant, cuisine or a dish   ">
-                </form>
-            </div>
-            
-            <div class="login Box btn">
-           <button class="button">Login</button>
-            </div>
-
-            <div class="signup Box btn">
-             <button class="button">Sign up</button>
-            </div>
-
+            <nav class="tabs-container">
+                <a href="../DiningOut/index.html" class="tab-item">
+                    <div class="tab-icon"><img src="../DiningOut/fork.avif" alt=""></div>
+                    <div class="tab-text"><h2>Dining Out</h2></div>
+                </a>
+                <a href="../Delivery/index.html" class="tab-item active">
+                    <div class="tab-icon" style="background: #E8F3F1;"><img src="../DiningOut/scooter.webp" alt=""></div>
+                    <div class="tab-text"><h2>Delivery</h2></div>
+                </a>
+                <a href="../NightLife/index.html" class="tab-item">
+                    <div class="tab-icon" style="background: #EDF4FF;"><img src="../DiningOut/Nightlife.webp" alt=""></div>
+                    <div class="tab-text"><h2>Nightlife</h2></div>
+                </a>
+            </nav>
         </div>
-        <div class="project">
-        <div class="second">
-
-            <div class="pehla Box">
-
-            <div class="plate Box">
-                <a href="../DiningOut/index.html"><img src="./fork.avif" alt="fork_icon" class="fork"></a>
-            </div>
-            <div class="dining Box">
-               <a href="../DiningOut/index.html" class="rang">DiningOut</a>
-            </div>
-            </div>
-            
-               
-            <div class="dusra Box">
-
-            <div class="scooter Box">
-                <a href="../Delivery/index.html"><img src="./scooter1webp.webp" alt="scooter_icon" class="gaddi"></a>
-            </div>
-            
-            <div class="Deli Box">
-                <a href="../Delivery/index.html" class="rang">Delivery</a>
-            </div>
-        </div>
-        
-
-
-        <div class="tisra Box">
-         <div class="nigh Box">
-                <a href="../NightLife/index.html"><img src="./Nightlife.webp" alt="night" class="nighticon"></a>
-            </div>
-            
-            <div class="Nightl Box">
-                <a href="../NightLife/index.html" class="rang">Nightlife</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-   
-</header>
+    </header>
      <div class="xx">
     <div class="project">
         <div class="c1">
@@ -285,361 +248,85 @@
 
     
     <main>
-        <div class="project">
+        <div class="container">
+            <div class="c1">
+                <h1>Best Restaurants in Guntur</h1>
+            </div>
+            <div class="restaurant-grid">
+                <!-- Card 1 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/dish_photos/941/937978530988c46a894ccea4f1d42941.jpeg" alt="biryani">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Sapno Ki Biryani's</h3>
+                            <div class="rating">4.0★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Biryani</span>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="c1">
-          <h1>Best Restaurants in Guntur</h1>
-        </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/dish_photos/941/937978530988c46a894ccea4f1d42941.jpeg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Sapno Ki Biryani's</p>
-                <div class="off">
-                    
-                <p>Flat 50% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Biryani</p>
-            </div>
-            <div class="price">
-                <p>₹200 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div>
+                <!-- Card 2 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="../North/wow.avif" alt="biryani">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Ajmeer Maharaj Hotel</h3>
+                            <div class="rating">4.0★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>North Indian, Biryani</span>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <div class="image">
-            <img src="../North/wow.avif" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Ajmeer Maharaj Hotel</p>
-                <div class="off"><p>Flat 10% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>North Indian,Biryani</p>
-            </div>
-            <div class="price">
-                <p>₹200 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/2/22174162/27482e487a333877b93d666b9b052696_o2_featured_v2.jpg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Hot N Fast</p>
-                <div class="ruppes"><p>₹101 OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>3.7★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Mughlai</p>
-            </div>
-            <div class="price">
-                <p>₹200 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>26 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/6/21831516/48b443a7137e6d40dacd68b562d8f222_o2_featured_v2.jpg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Dragon Fruits</p>
-                <div class="ruppes"><p>₹101 OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Chinese</p>
-            </div>
-            <div class="price">
-                <p>₹200 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>19 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/dish_photos/28f/b8bf20b043af448672308c5dfc3a528f.png" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>SS Corn Paradise</p>
-                <div class="ruppes"><p>₹101 OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.1★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Andhra, Beverages</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>36 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/0/19454920/5ad539865c3ecfca0b68f07c441308fa_o2_featured_v2.jpg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Athreyapuram Special</p>
-                <div class="ruppes"><p>₹101 OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Fast Food, Street Foo..</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/dish_photos/a12/27a3437c59827d68999aeec33429ea12.jpg" alt="cocktail" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Hotel Karthikeya</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Street Food, Snacks, Beverages</p>
-            </div>
-            <div class="price">
-                <p>₹500 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/2/21563042/2b3c18a2f4ecebdc056b1f2b74d772e4_o2_featured_v2.jpg" alt="pizza" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Tasty Eatery</p>
-                <div class="ruppes"><p>30% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Chinese, Pizza</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>42 min</p>
-            </div>
-            
-        </div>
-    </div>
+                <!-- Card 3 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/2/22174162/27482e487a333877b93d666b9b052696_o2_featured_v2.jpg" alt="biryani">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Hot N Fast</h3>
+                            <div class="rating">3.7★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Mughlai</span>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <div class="image">
-            <img src="../North/silk.avif" alt="north" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Silk & Slice Waffle</p>
-                <div class="off">
-                    
-                <p>Flat 20% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Biryani, North Indian</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
+                <!-- Card 4 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/6/21831516/48b443a7137e6d40dacd68b562d8f222_o2_featured_v2.jpg" alt="biryani">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Dragon Fruits</h3>
+                            <div class="rating">4.2★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Chinese</span>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div><div class="card">
-        <div class="image">
-            <img src="../Dosa/kri.avif" alt="dosa" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Krishna Dosas</p>
-                <div class="off">
-                    
-                <p>Flat 50% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.1★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Dosa, Idli</p>
-            </div>
-            <div class="price">
-                <p>₹60 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="../IceCream/nee.jpeg" alt="icecream" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Gourmet IceCream</p>
-                <div class="off">
-                    
-                <p>Flat 10% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Bakery, IceCream, Desserts</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="../Pizza/veg.jpg" alt="pizza" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>La Pino'z Pizza</p>
-                <div class="off"><p>Flat 50% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Pizza, Pasta</p>
-            </div>
-            <div class="price">
-                <p>₹150 for one</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>26 min</p>
-            </div>
-            
-        </div>
-    </div>
-    </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
 
-    
-    
-    </div>
     </div>
     
      </main>

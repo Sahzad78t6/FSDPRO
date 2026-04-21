@@ -70,6 +70,14 @@ body {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -167,6 +175,13 @@ body {
     width: 100%;
 }
 
+@media (max-width: 991px) {
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 /* Left Side Styling */
 .content-side {
     flex: 1;
@@ -196,6 +211,15 @@ body {
     color: #7A7A7A;
     margin-bottom: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.6rem;
+    }
+    .content-side {
+        padding: 40px 20px;
+    }
 }
 
 /* Right Side Styling */
@@ -449,6 +473,21 @@ body {
     gap: 40px;
     color:white;
     margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        padding: 40px 20px;
+    }
 }
 
 /* HEADINGS */

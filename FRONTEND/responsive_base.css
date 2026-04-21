@@ -1,0 +1,308 @@
+/* Modern & Responsive Base Styles for FSDPRO */
+
+:root {
+    --primary-red: #EF4F5F;
+    --text-dark: #1C1C1C;
+    --text-muted: #696969;
+    --bg-light: #F8F8F8;
+    --border-color: #E8E8E8;
+    --shadow-subtle: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Base resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+/* Responsive Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Search Bar Upgrade */
+.header-main {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-main img {
+    height: 40px;
+    width: auto;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 15px;
+    box-shadow: var(--shadow-subtle);
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.auth-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-btns button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.auth-btns button.signup-btn {
+    color: var(--primary-red);
+}
+
+/* Tabs / Secondary Nav */
+.tabs-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.tab-item.active {
+    border-bottom-color: var(--primary-red);
+}
+
+.tab-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-icon img {
+    width: 25px;
+}
+
+.tab-text h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.tab-item.active .tab-text h2 {
+    color: var(--primary-red);
+}
+
+/* Card Grid */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.restaurant-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.restaurant-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background: var(--primary-red);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.rating {
+    background: #24963F;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .nav-top {
+        flex-wrap: wrap;
+    }
+    .logo-main img {
+        height: 30px;
+    }
+    .search-container {
+        order: 3;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .auth-btns {
+        margin-left: auto;
+    }
+    .tabs-container {
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        margin-top: 15px;
+    }
+    .tab-text h2 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Modals */
+.overlay, .overlaysign {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.login-box, .signup-box {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-hover);
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .login-box, .signup-box {
+        padding: 20px;
+    }
+    .login-header h2, .signup-header h2 {
+        font-size: 20px;
+    }
+}
+
+/* Cuisine Header Styles */
+.cuisine-header {
+    margin: 30px 0;
+}
+
+.cuisine-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.cuisine-header p {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.cuisine-header h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.card-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background: #256fef;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 600;
+}

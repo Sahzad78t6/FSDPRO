@@ -4,713 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../responsive_base.css">
     <link rel="stylesheet" href="./style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-         <div class="pura">
-       
-        <div class="head">
-        <div class="first">
-            <div class="zomato Box btn ">
-               <img src="../Delivery/logo.png" tabindex="0" class="pic">
+    <header class="header-main">
+        <div class="container">
+            <div class="nav-top">
+                <a href="../index.html" class="logo-main">
+                    <img src="../Delivery/logo.png" alt="Zomato">
+                </a>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i>
+                    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+                <div class="auth-btns">
+                    <button onclick="openLogin()">Log in</button>
+                    <button class="signup-btn" onclick="openSignup()">Sign up</button>
+                </div>
             </div>
 
-            <div class="search Box btn ">
-                <form >
-                <input type="text" class="searching" placeholder="Search for restaurant, cuisine or a dish   ">
-                </form>
-            </div>
-
-            <div class="login Box btn">
-           <button class="button">Login</button>
-            </div>
-
-            <div class="signup Box btn">
-             <button class="button">Sign up</button>
-            </div>
-
+            <nav class="tabs-container">
+                <a href="../DiningOut/index.html" class="tab-item">
+                    <div class="tab-icon"><img src="../DiningOut/fork.avif" alt=""></div>
+                    <div class="tab-text"><h2>Dining Out</h2></div>
+                </a>
+                <a href="../Delivery/index.html" class="tab-item">
+                    <div class="tab-icon" style="background: #E8F3F1;"><img src="../DiningOut/scooter.webp" alt=""></div>
+                    <div class="tab-text"><h2>Delivery</h2></div>
+                </a>
+                <a href="../NightLife/index.html" class="tab-item active">
+                    <div class="tab-icon" style="background: #EDF4FF;"><img src="../DiningOut/Nightlife.webp" alt=""></div>
+                    <div class="tab-text"><h2>Nightlife</h2></div>
+                </a>
+            </nav>
         </div>
-         <div class="project">
-        <div class="second">
+    </header>
 
-            <div class="pehla Box">
-
-            <div class="plate Box">
-                <a href="../DiningOut/index.html"><img src="./fork.avif" alt="fork_icon" class="fork"></a>
-            </div>
-            <div class="dining Box">
-                <a href="../DiningOut/index.html" class="rang">DiningOut</a>
-            </div>
-            </div>
-            
-               
-            <div class="dusra Box">
-
-            <div class="scooter Box">
-                <a href="../Delivery/index.html"><img src="./scooter.webp" alt="scooter_icon" class="gaddi"></a>
-            </div>
-            
-            <div class="Deli Box">
-                <a href="../Delivery/index.html" class="rang">Delivery</a>
-            </div>
-        </div>
-        
-
-
-        <div class="tisra Box">
-         <div class="nigh Box">
-                <a href="../NightLife/index.html"><img src="./Nightlife.webp" alt="night" class="nighticon"></a>
-            </div>
-            
-            <div class="Nightl Box">
-                <a href="../NightLife/index.html" class="rang">Nightlife</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-</header>
     <div class="xx">
-         <div class="project">
-<div class="full">
-<div class="famous">
-        <div class="c1">
-            <p>Collections</p>
-        </div>
-        <div class="know">
-            <p>Explore curated lists of top restaurants, cafes, pubs, and bars across the globe-crafted from the world’s most exciting food and nightlife trends.</p>
-        </div>
-        <div class="pictures">
-        <div class="pic1 Box new">
-            <img src="./iconic.avif" alt="hotelpic" class="img1">
-            <div class="trend">
-            <div class="para1">Top Trending Spots</div>
-            <div class="pa2">38 places &#9654;</div>
+        <div class="container">
+            <div class="famous">
+                <div class="c1"><p>Collections</p></div>
+                <div class="know">
+                    <p>Explore curated lists of top restaurants, cafes, pubs, and bars across the globe-crafted from the world’s most exciting food and nightlife trends.</p>
+                </div>
+                <div class="pictures">
+                    <div class="pic1 Box new">
+                        <img src="./iconic.avif" alt="hotelpic" class="img1">
+                        <div class="trend">
+                            <div class="para1">Top Trending Spots</div>
+                            <div class="pa2">38 places &#9654;</div>
+                        </div>
+                    </div>
+                    <div class="pic3 Box new">
+                        <img src="./cocktail.avif" alt="hotelpic"class="img1">
+                        <div class="trend">
+                            <div class="para1">Best Cocktail Bars</div>
+                            <div class="pa2">29 places &#9654;</div>
+                        </div>
+                    </div>
+                    <div class="pic2 Box new">
+                        <img src="./chill.avif" alt="hotelpic"class="img1">
+                        <div class="trend">
+                            <div class="para1">Chilled Out Pubs</div>
+                            <div class="pa2">38 places &#9654;</div>
+                        </div>
+                    </div>
+                    <div class="pic4 Box new">
+                        <img src="./enjoy.avif" alt="hotelpic"class="img1">
+                        <div class="trend">
+                            <div class="para1">Lit Party Places</div>
+                            <div class="pa2">38 places &#9654;</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="pic3 Box new">
-            <img src="./cocktail.avif" alt="hotelpic"class="img1">
-            <div class="trend">
-            <div class="para1">Romantic Dining Places</div>
-            <div class="pa2">29 places &#9654;</div>
-            </div>
-        </div>
-        <div class="pic2 Box new">
-            <img src="./chill.avif" alt="hotelpic"class="img1">
-            <div class="trend">
-            <div class="para1">Best Pubs and Bars</div>
-            <div class="pa2">38 places &#9654;</div>
-            </div>
-        </div>
-        <div class="pic4 Box new">
-            <img src="./enjoy.avif" alt="hotelpic"class="img1">
-            <div class="trend">
-            <div class="para1">Lit Party Places</div>
-            <div class="pa2">38 places &#9654;</div>
-            </div>
-        </div>
-        <div class="pic5 Box new">
-            <img src="./biryani.avif" alt="hotelpic" class="img1">
-            <div class="trend">
-            <div class="para1">Best Biryani Spots</div>
-            <div class="pa2">21 places &#9654;</div>
-            </div>
-        </div>
-        </div>
-  </div>
-
-</div>
-</div>
     </div>
-          
-    
+
     <main>
+        <div class="container">
+            <div class="c1">
+                <h1>Best Pubs and Bar Restaurants in Guntur</h1>
+            </div>
+            <div class="restaurant-grid">
+                <!-- Card 1 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/3/20997853/c6bb43341028e3b58d8e229c94910338_featured_v2.jpg" alt="air">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>63 Modern Regional</h3>
+                            <div class="rating">4.0★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Continental, Chinese, Asian</span>
+                            <span>Dining</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project">
-         <div class="c1">
-          <h1>Best Pubs and Bar Restaurants in Guntur</h1>
-        </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/3/20997853/c6bb43341028e3b58d8e229c94910338_featured_v2.jpg" alt="air" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>63 Modern Regional</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Continental, Chinese, Asian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>24 min</p>
-            </div>
-            
-        </div>
-    </div>
+                <!-- Card 2 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/8/19979098/52cd5097e3f1e4668a4dcf17e2d3b178_featured_v2.jpg" alt="light">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>FireFly Club And Social</h3>
+                            <div class="rating">4.1★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>North Indian, Chinese, Asian</span>
+                            <span>Dining</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/8/19979098/52cd5097e3f1e4668a4dcf17e2d3b178_featured_v2.jpg" alt="light" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>FireFly Club And Social</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.1★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>North Indian, Chinese, Asian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>33 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/3/21751833/7f8c297caafac60b1ce38671dfd3c22f_featured_v2.jpg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Quack Monastery</p>
-                <div class="ruppes"><p>₹101 OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>3.7★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Continental, Mexican, Asian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>26 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/4/20670174/874629dca183b0e79bcc7dde1c7bb25f_featured_v2.jpg "alt="bar1" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Lord Of Drinks</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.3★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Modern Indian, Asian, Italian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>49 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/8/20985998/8bb4137ed16ca0852207a5e6693f531f_featured_v2.jpg" alt="biryani" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Cara Cara</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.3★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Bar Food, North Indian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>46 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/7/21066027/cefeafeafbafba5a5fff543a4d6cd86c_featured_v2.jpg" alt="chamkeela" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Chamkeela</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.5★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Indian, Mexican, Turkish</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>53 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/1/21819521/61c5fb8e4ee89e32b7f7cf3a622bdb57_featured_v2.jpg" alt="bar6" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Fat Pigeon</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.3★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Bar Food, Continental</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>34 min</p>
-            </div>
-            
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/4/19982534/169529ec69e973aa53d15c3d63535347_featured_v2.jpg" alt="terrace" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Makau</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Beverages, Bar Foods</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>46 min</p>
-            </div>
-            
-        </div>
-    </div>
+                <!-- Card 3 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/3/21751833/7f8c297caafac60b1ce38671dfd3c22f_featured_v2.jpg" alt="biryani">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Quack Monastery</h3>
+                            <div class="rating">3.7★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Continental, Mexican, Asian</span>
+                            <span>Dining</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/0/20388020/0fc6b220297879e1f4080d765b7965f0_featured_v2.jpg" alt="white" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Roast 24 Seven</p>
-                <div class="off"><p>Flat 69% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Continental, Pizza, Chinese</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
+                <!-- Card 4 -->
+                <div class="restaurant-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://b.zmtcdn.com/data/pictures/4/20670174/874629dca183b0e79bcc7dde1c7bb25f_featured_v2.jpg" alt="bar1">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Lord Of Drinks</h3>
+                            <div class="rating">4.3★</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Modern Indian, Asian, Italian</span>
+                            <span>Dining</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="min">
-            <div class="time">
-              <p>29 min</p>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/3/22295613/aade5a7026490f1cdc60f7f5dc094f78_featured_v2.jpg?output-format=webp" alt="club" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Tabula Rasa</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.8★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Continental, Asian, Chinese</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>33 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/4/21084944/ed6b89f76a16b297852ad0bef6fc1a27_featured_v2.jpg" alt="lounge" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Krityaa Courtyard</p>
-                <div class="off"><p>Flat 40% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>3.9★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Beverages, Salad, Coffee</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>43 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/9/18356469/1a812913b81e1057a40d8dfad681c42e_featured_v2.jpg" alt="prost" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Babylon Brewery Club</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Turkish, Mexican, Continental</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/9/20983729/7845f3ec74a7d30ed8e6c6463ba6c489_featured_v2.jpg" alt="mmonastry" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Zythum Brewing</p>
-               
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Pzza, Indian, Chinese</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/5/21270445/9802ec39c2e630006180520c9a9661fa_featured_v2.jpg" alt="forni" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Sky Salt</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.0★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Asian, Continental</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>38 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/4/20876424/a27a88be7b029cdc0e47ebe13522c67b_featured_v2.jpg" alt="bottle" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Itlu</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Indian, Continental, Turkish</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/6/20418596/2545ff79becf1b2aa3b11bf4f654b89e_featured_v2.jpg" alt="noho" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Marquee Night</p>
-                <div class="off"><p>Flat 20% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.1★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>North Indian, Bar Food</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/3/21715393/ac0413dba9b671952cd3d0b86a01cd88_featured_v2.jpg" alt="naatu" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Ante Rooms</p>
-                <div class="off"><p>Flat 19% OFF</p></div>
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Bar Food, Pizza, Sandwich</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/8/19327828/8a6a3972f2f17af53013fac6d5a28d9f_featured_v2.jpg" alt="hero" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Bar9 Saga</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.1★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Seafood, Biryani, Kebab</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/7/21629447/b16d5f53061e9c7213dc687beb118dff_featured_v2.jpg" alt="trick" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Brick and Branch</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.6★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Continental, Chinese, Asian</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>23 min</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image">
-            <img src="https://b.zmtcdn.com/data/pictures/1/20890841/2fd2210a8d052b369dd4049290fe4c01_featured_v2.jpg" alt="pent" class="img">
-        </div>
-        <div class="restaurant">
-            <div class="hotelname">
-                <p>Mamalola Penthouse</p>
-                
-            </div>
-            <div class="rate">
-             <p>4.2★</p>
-            </div>
-        </div>
-        <div class="dish">
-            <div class="type">
-                <p>Modern Indian, Chinese</p>
-            </div>
-            <div class="price">
-                <p>Dining</p>
-            </div>
-        </div>
-        <div class="min">
-            <div class="time">
-              <p>43 min</p>
-            </div>
-            
-        </div>
-    </div>
-    </div>
-     </main>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
     
 </body>
 </html>
