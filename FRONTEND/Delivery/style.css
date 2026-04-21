@@ -324,11 +324,9 @@ color:#393838;
 
 .order, .order1 {
     padding: 20px 0;
-    overflow-x: auto;
+    overflow-x: hidden; /* Hide scrollbar for auto-scroll */
     width: 100%;
     margin-left: 0;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 .order {
@@ -405,7 +403,7 @@ body {
      margin-right: 13vw;
 }
 .slider {
-    overflow: visible;
+    overflow: hidden;
 }
 .slide-track {
     will-change: transform;
