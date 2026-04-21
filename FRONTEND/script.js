@@ -43,3 +43,11 @@ document.querySelectorAll('.slider-window').forEach(window => {
         }
     });
 });
+
+// Global Restaurant Card Navigation
+document.addEventListener('click', (e) => {
+    const card = e.target.closest('.restaurant-card');
+    if (card && card.dataset.link) {
+        window.location.href = card.dataset.link;
+    }
+});
